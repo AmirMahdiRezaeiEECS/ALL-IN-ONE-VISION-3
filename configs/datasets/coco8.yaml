@@ -1,0 +1,11 @@
+# Dataset config: coco8 — Ultralytics' tiny built-in sample dataset.
+# Good for smoke-testing the pipeline end to end before pointing at a
+# real dataset.
+name: coco8
+format: yolo
+path: coco8.yaml   # Ultralytics-recognized dataset yaml (auto-downloaded)
+num_classes: 80
+notes: >
+  Placeholder/example dataset. For a real dataset: run
+  scripts/prepare_dataset.py to generate data/<name>/data.yaml, then
+  add a configs/datasets/<name>.yaml here with `path` pointing at it.

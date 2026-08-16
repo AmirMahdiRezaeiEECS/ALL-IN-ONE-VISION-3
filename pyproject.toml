@@ -1,0 +1,22 @@
+[project]
+name = "aio-vision-3"
+version = "0.1.0"
+description = "Simple, low-code, experiment-oriented repository for training, evaluating, and deploying YOLO models with Ultralytics."
+requires-python = ">=3.10"
+dependencies = [
+    "ultralytics>=8.3.0",
+    "mlflow>=2.14.0",
+    "omegaconf>=2.3.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+serve = ["fastapi>=0.110.0", "uvicorn>=0.29.0", "python-multipart>=0.0.9", "pillow>=10.0.0"]
+dev = ["pytest>=8.0.0", "ruff>=0.6.0"]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

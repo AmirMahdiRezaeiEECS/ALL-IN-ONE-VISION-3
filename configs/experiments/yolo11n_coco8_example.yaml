@@ -1,0 +1,24 @@
+name: yolo11n_coco8_example
+
+dataset: coco8   # -> configs/datasets/coco8.yaml
+
+model:
+  # Any Ultralytics-supported checkpoint or architecture yaml.
+  weights: yolo11n.pt
+
+training:
+  epochs: 20
+  imgsz: 640
+  batch: 16
+  device: 0          # "0" for GPU 0, "cpu" for CPU, "0,1" for multi-GPU
+  optimizer: auto
+  lr0: 0.01
+  patience: 20
+  workers: 8
+  seed: 0
+  project: runs/train
+  exist_ok: true
+
+tracking:
+  experiment_name: aio-vision-3
+  tracking_uri: mlruns
