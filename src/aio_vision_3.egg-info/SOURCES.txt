@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/aio_vision/__init__.py
+src/aio_vision/config.py
+src/aio_vision/tracking.py
+src/aio_vision_3.egg-info/PKG-INFO
+src/aio_vision_3.egg-info/SOURCES.txt
+src/aio_vision_3.egg-info/dependency_links.txt
+src/aio_vision_3.egg-info/requires.txt
+src/aio_vision_3.egg-info/top_level.txt
+tests/test_config.py

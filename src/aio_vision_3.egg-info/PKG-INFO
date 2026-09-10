@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: aio-vision-3
+Version: 0.1.0
+Summary: Simple, low-code, experiment-oriented repository for training, evaluating, and deploying YOLO models with Ultralytics.
+Requires-Python: >=3.10
+Requires-Dist: ultralytics>=8.3.0
+Requires-Dist: mlflow>=2.14.0
+Requires-Dist: omegaconf>=2.3.0
+Requires-Dist: pyyaml>=6.0
+Provides-Extra: serve
+Requires-Dist: fastapi>=0.110.0; extra == "serve"
+Requires-Dist: uvicorn>=0.29.0; extra == "serve"
+Requires-Dist: python-multipart>=0.0.9; extra == "serve"
+Requires-Dist: pillow>=10.0.0; extra == "serve"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Requires-Dist: ruff>=0.6.0; extra == "dev"
